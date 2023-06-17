@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=Judson:wght@400;700&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+:root {
+  --base-color: #121317;
+  --logo-color: #40454d;
+  --primary-color: #ffffff;
+  --secondary-color: #adadad;
+  --nav-text-color: #828b9a;
+  --horizontal-line-color: #4a4a4a;
+
+  --header-font: "Judson", serif;
+  --base-font: "Roboto", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--primary-color);
+}
+
+h1, h2 {
+  font-family: var(--header-font);
+}
+
+/* header */
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 30px 90px;
+    background-color: transparent;
+    position: absolute;
+}
+
+.container .logo {
+    color: var(--logo-color);
+    font-size: 32px;
+}
+
+.container .items {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    list-style-type: none;
+}
+
+.container a {
+    text-decoration: none;
+    color: var(--nav-text-color);
+    font-size: 20px;
+}
+
+.banner-img {
+    background: var(--base-color) url(images/banner.png) no-repeat center/cover;
+    height: 1084px;
+}
+
+.banner .title {
+    position: absolute;
+    right: 200px;
+    top: 260px;
+}
+
+.banner h1 {
+    color: var(--base-color);
+    font-size: 90px;
+    font-family: var(--header-font);
+}
+.banner .semi-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.banner .border {
+    background-color: var(--nav-text-color);
+    width: 50px;
+    height: 1px;
+}
+
+.banner h2 {
+    color: var(--nav-text-color);
+    font-family: var(--header-font);
+    font-size: 20px;
+}
+
+/* about */
+#about {
+  background-color: var(--base-color);
+}
+
+#about article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 850px;
+    padding: 60px 0 180px 0;
+    gap: 32px;
+    margin: 0 auto;
+}
+
+#about h2 {
+    color: var(--secondary-color);
+}
+
+#about h1 {
+    font-size: 60px;
+}
+
+#about p {
+    font-family: var(--base-font);
+    font-size: 16px;
+    line-height: 2rem;
+    text-align: center;
+}
+
+/* excursions */
+#excursions {
+    display: flex;
+    gap: 50px;
+    background-color: var(--base-color);
+    padding: 0 0 90px 0;
+}
+
+#excursions .plane-img {
+    background: url(images/plane-wreck.jpg) no-repeat top/cover;
+    width: 60%;
+}
+
+#excursions .ranking {
+    display: flex;
+    flex-direction: column;
+}
+
+#excursions h2 {
+    color: var(--secondary-color);
+}
+
+#excursions ol {
+    display: flex;
+    flex-direction: column;
+    counter-reset: item;
+    list-style-type: none;
+}
+
+#excursions li {
+    display: flex;
+    align-items: center;
+    font-size: 32px;
+    border-bottom: 2px solid var(--secondary-color);
+    padding: 20px;
+}
+
+#excursions span {
+    white-space: pre;
+    font-size: 50px;
+}
+
+/* atlantic */
+#atlantic {
+    background-color: var(--base-color);
+}
+
+#atlantic .atlantic-container {
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+    margin: 0 0 0 90px;
+    padding: 90px 0;
+}
+
+#atlantic article {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 90px 0;
+}
+
+#atlantic h1 {
+    font-size: 50px;
+}
+
+#atlantic h2 {
+    color: var(--secondary-color);
+}
+
+#atlantic p {
+    line-height: 1.8rem;
+}
+
+#atlantic .btn {
+    all: unset;
+    cursor: pointer;
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+    padding: 10px;
+}
+
+#atlantic .atlantic-img {
+    background: url(images/earth.png) no-repeat left/cover;
+    flex: 1;
+}
+
+/* gallery */
+#gallery {
+    background-color: var(--base-color);
+}
+
+#gallery {
+    background: #1E1E1E url(images/aurora.png) no-repeat center/cover;
+}
+
+#gallery .gallery-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    width: 50%;
+    padding: 180px 90px;
+}
+
+#gallery h1 {
+    font-size: 50px;
+}
+
+#gallery h2 {
+    color: var(--secondary-color);
+}
+
+#gallery p {
+    line-height: 1.8rem;
+    font-size: 20px;
+}
+
+#gallery .btn {
+    all: unset;
+    cursor: pointer;
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+    padding: 10px;
+}
+
+/* footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    background-color: var(--base-color);
+}
+
+footer .items {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+footer p {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
